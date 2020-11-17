@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Connah's Quasar Application
+          List Application
         </q-toolbar-title>
 
         <div>Running on: Quasar v{{ $q.version }} | Laravel v7.29</div>
@@ -30,7 +30,7 @@
           header
           class="text-grey-8"
         >
-          Navigation Menu
+          Useful Links
         </q-item-label>
         <EssentialLink
           v-for="link in essentialLinks"
@@ -51,16 +51,16 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksData = [
   {
-    title: 'Home',
-    caption: 'Go back to home page',
-    icon: 'home',
-    link: 'http://localhost:8000/'
+    title: 'Site repo',
+    caption: 'github.com/connf/list',
+    icon: 'code',
+    link: 'https://github.com/connf/list'
   },
   {
-    title: 'Github Repo for this site',
-    caption: 'github.com/connf',
+    title: 'API repo',
+    caption: 'github.com/connf/api.list',
     icon: 'code',
-    link: 'https://github.com/connf'
+    link: 'https://github.com/connf/api.list'
   },
   {
     title: 'LinkedIn',
@@ -75,7 +75,7 @@ export default {
   components: { EssentialLink },
   data () {
     return {
-      leftDrawerOpen: false,
+      leftDrawerOpen: true,
       essentialLinks: linksData
     }
   }
