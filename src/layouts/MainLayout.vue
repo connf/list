@@ -15,7 +15,7 @@
           Connah's Quasar Application
         </q-toolbar-title>
 
-        <div>Running on: Quasar v{{ $q.version }} | Laravel v7.29.2</div>
+        <div>Running on: Quasar v{{ $q.version }} | Laravel v7.29</div>
       </q-toolbar>
     </q-header>
 
